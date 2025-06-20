@@ -34,17 +34,17 @@ https://hub.docker.com/
 1. Search for **mongo**, click on the Official image, then copy and paste into your terminal on your computer:  
    ```bash
    docker pull mongo
-```
+   ```
 
 2. Search for mongo-express, click on the Official image, then copy and paste into your terminal:
   ```bash
   docker pull mongo-express
-```
+  ```
 
 3. To check the downloaded images, run:
   ```bash
   docker images
-```
+  ```
 
 ### Create a Docker Network
 
@@ -71,14 +71,14 @@ docker run -d \
   mongo
 ```
 
-The default MongoDB port is 27017.
+The default MongoDB port is *27017*.
 
 To check if the container is running and view logs, run:
 ```bash
 docker logs <container_id>
 ```
 
-###Create a Mongo Express Container
+### Create a Mongo Express Container
 
 Run the following command to start a Mongo Express container:
 ```bash
@@ -104,6 +104,7 @@ docker logs <container_id_or_name>
 > *ME_CONFIG_MONGODB_URL ensures proper connection between Mongo Express and your MongoDB container on the Docker network.*
 
 The connection between node.js and mongdb, can be checked into *server* file.
+
 *Note!* You shouldn’t have the password or root/admin user, set into mongoUrlLocal variable, it’s only for purpose of the project here.
 Those are the ones set in the environment variables when we created the docker mongo db container.
 
@@ -111,9 +112,8 @@ Those are the ones set in the environment variables when we created the docker m
 
 1. Open your browser and go to: *localhost://8081*
 2. Log in with your Mongo Express credentials.
-3. Add a new database named user-account.
-![Login to Mongo Express](Users/gabidinica/Desktop/login-mongo)
-4. Click on the new database and add a collection named users.
+3. Add a new database named: *user-account*.
+4. Click on the new database and add a collection named: *users*.
 
 Make sure your Node.js application is still running, then open a new browser tab and go to:
 *http://localhost:3000*
