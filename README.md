@@ -1,10 +1,10 @@
 # 🛠️ Use Docker for local development
 
-##Technologies used:
+## Technologies used:
 
  Docker, Node.js, MongoDB, MongoExpress
 
-##Project Description:
+## Project Description:
 - Create Dockerfile for Nodejs application and build Docker image
 - Run Nodejs application in Docker container and connect to
 - MongoDB database container locally.
@@ -16,6 +16,7 @@
 ```bash
 git clone git@github.com:gabidinica/docker-projects.git
 cd js-app/app
+```
 
 ## 🚀 2. Start the App
 
@@ -34,11 +35,12 @@ https://hub.docker.com/
 1. Search for **mongo**, click on the Official image, then copy and paste into your terminal:  
    ```bash
    docker pull mongo
-
+```
 2. Search for mongo-express, click on the Official image, then copy and paste into your terminal:
   ```bash
   docker pull mongo-express
+```
 3. To check the downloaded images, run:
   ```bash
   docker images
-
+```
