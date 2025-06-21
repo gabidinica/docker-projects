@@ -37,8 +37,8 @@ cd js-app
 docker build -t my-app:1.0 .
 ```
 
-> 🏷️ `-t my-app:1.0`: adaugă un tag personalizat imaginii Docker.  
-> 📁 `.` indică directorul curent, unde se află fișierul `Dockerfile`.
+> 🏷️ `-t my-app:1.0`: adds a personalized tag to Docker image.  
+> 📁 `.` indicates where the current `Dockerfile` is localized.
 
 3. Verify that the image was created:
 ```bash
