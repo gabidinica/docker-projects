@@ -28,16 +28,17 @@ Every image we build is based on an **already existing image**.
 ## 🏗️ Building the Docker Image
 
 1. Open a terminal and navigate to the `js-app` folder:
-   ```bash
-   cd js-app
-  ```
+```bash
+cd js-app
+```
 
 2. Build the image using:
 ```bash
 docker build -t my-app:1.0 .
 ```
-> -t my-app:1.0: adds a custom tag to the image.
-> `.` refers to the current directory, where the Dockerfile is located.
+
+> 🏷️ `-t my-app:1.0`: adaugă un tag personalizat imaginii Docker.  
+> 📁 `.` indică directorul curent, unde se află fișierul `Dockerfile`.
 
 3. Verify that the image was created:
 ```bash
@@ -117,8 +118,10 @@ docker exec -it CONTAINER_ID /bin/sh
 ```
 
 To check the environment variables that we set in Dockerfile, type:
-> env
-In the results, you'll seeL MONGO_DB_USERNAME and MONGO_DB_PWD
+```bash
+env
+```
+> **In the results, you'll see: MONGO_DB_USERNAME and MONGO_DB_PWD**
 
 To check the created folder:
 ```bash
