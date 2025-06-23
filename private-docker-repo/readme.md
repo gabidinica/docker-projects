@@ -52,7 +52,7 @@
 2. Copy **step 1** command from the modal:
 
 ```bash
-aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 009160057493.dkr.ecr.eu-central-1.amazonaws.com
+aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin EXAMPLE_ID.dkr.ecr.eu-central-1.amazonaws.com
 ```
 
 > If successful, you’ll see: `Login Succeeded`
@@ -60,7 +60,7 @@ aws ecr get-login-password --region eu-central-1 | docker login --username AWS -
 🏷️ Tag and Push the Docker Image:
 3. Tag your image with the full ECR repo URL:
 ```bash
-docker tag my-app:1.0 009160057493.dkr.ecr.eu-central-1.amazonaws.com/my-app:1.0
+docker tag my-app:1.0 EXAMPLE_ID.dkr.ecr.eu-central-1.amazonaws.com/my-app:1.0
 ```
 
 4. Confirm image tagging:
@@ -72,7 +72,7 @@ docker images
 
 5. Push the tagged image to ECR:
 ```bash
-docker push 009160057493.dkr.ecr.eu-central-1.amazonaws.com/my-app:1.0
+docker push EXMAPLE_ID.dkr.ecr.eu-central-1.amazonaws.com/my-app:1.0
 ```
 
 6. Go back to the AWS Console → ECR → refresh to confirm the image was uploaded.
@@ -93,12 +93,12 @@ docker images
 
 4. Tag the new image for pushing:
 ```bash
-docker tag my-app:1.1 009160057493.dkr.ecr.eu-central-1.amazonaws.com/my-app:1.1
+docker tag my-app:1.1 EXAMPLE_ID.dkr.ecr.eu-central-1.amazonaws.com/my-app:1.1
 ```
 
 5. Push the new image:
 ```bash
-docker push 009160057493.dkr.ecr.eu-central-1.amazonaws.com/my-app:1.1
+docker push EXAMPLE_ID.dkr.ecr.eu-central-1.amazonaws.com/my-app:1.1
 ```
 
 6. Refresh your ECR repository page. Now you’ll see *both image versions* (`1.0` and `1.1`) listed.
