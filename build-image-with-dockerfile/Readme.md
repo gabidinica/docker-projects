@@ -13,7 +13,7 @@ Every image we build is based on an **already existing image**.
 2. Search for `node` and click on the **official Docker image**.
 3. In our case, we use the **`node:20-alpine`** version instead of the `latest` one.
 
-> ℹ️ It's recommended to manage **environment variables** in a `docker-compose.yaml` file so you don't need to rebuild the image every time a variable changes.
+> ℹ️It's recommended to manage **environment variables** in a `docker-compose.yaml` file so you don't need to rebuild the image every time a variable changes.
 
 ---
 
