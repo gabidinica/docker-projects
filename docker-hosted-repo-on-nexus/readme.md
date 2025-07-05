@@ -114,11 +114,11 @@ Because Nexus runs on a non-secure registry (HTTP), we need to configure the Doc
 2. Click on **Docker Engine**.
 
 3. After the `"experimental"` line, add the following configuration block (inside the existing JSON):
-   ```json
+```bash
    {
      "insecure-registries": ["IP_ADDRESS_OF_NEXUS:8083"]
    }
- ```
+```
 
 4. Replace `IP_ADDRESS_OF_NEXUS` with the actual IP address of your Nexus server.
 
